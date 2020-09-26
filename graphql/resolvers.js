@@ -1,11 +1,12 @@
-import {people,getById, addPerson}  from "./db"
+import {people,getById, addPerson, deletePerson}  from "./db"
 const resolvers={
     Query:{
         people:()=>people,
         person:(_, {id})=>getById(id)
     },
     Mutation: {
-        addPerson:(_,{name, age, gender} ) => addPerson(name, age, gender)
+        addPerson:(_,{name, age, gender} ) => addPerson(name, age, gender),
+        deletePerson:(_, {id}) => deletePerson(id)
     }
 };
 
