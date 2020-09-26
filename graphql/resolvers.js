@@ -1,13 +1,13 @@
-const insoo = {
-    name : "insoo",
-    age: 26,
-    gender:"female"
-};
-
+import {people,getById, addPerson}  from "./db"
 const resolvers={
     Query:{
-        person:()=>insoo
+        people:()=>people,
+        person:(_, {id})=>getById(id)
+    },
+    Mutation: {
+        addPerson:(_,{name, age, gender} ) => addPerson(name, age, gender)
     }
 };
+
 
 export default resolvers;
