@@ -1,0 +1,25 @@
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "description": "Movie api using Graphql",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InsoooooooooJANG/movieql.git"
+  },
+  "author": "Insoo Jang <oasisholics@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InsoooooooooJANG/movieql/issues"
+  },
+  "homepage": "https://github.com/InsoooooooooJANG/movieql#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "graphql-yoga": "^1.14.8"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  }
+}
